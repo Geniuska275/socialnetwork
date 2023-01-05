@@ -24,10 +24,121 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>SocialMedia.</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      .b{
+        margin:auto;
+        text-align: center;
+        margin-top: 220px;
+      }
+       h1{
+        font-weight: bold;
+        color: dodgerblue;
+
+       } 
+
+      
+       h2{
+        font-weight: bold;
+        color: #5A5F66;
+
+       }
+       @media(max-width:768px){
+        .smal{
+         margin-bottom: 140px;
+        
+        }
+        .b{
+          margin-top: 300px;
+        }
+       }
+
+
+       .smal{
+        margin-top: 380px;
+        text-align: center;
+        font-weight: bolder;
+       }
+
+       .small .preloder{
+      
+      margin: auto;
+      }
+      .small .preloder .load{
+        color:red;
+        background-color: #242333;
+      }
+     
+       /* h2{
+        padding: 20px;
+        font-weight: bolder;
+        color: orangered;
+        border-bottom: 1px solid rgba(0,0,0, 0.2);
+       } */
+
+       ::-webkit-scrollbar{
+       width:2em;
+
+}
+
+
+
+       .loading{
+        -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+        animation:sk-scaleout 1s infinite ease-out;
+        background-color: dodgerblue;
+        border-radius:100%;
+        height: 4rem;
+        width: 4rem;
+       }
+       .container{
+        align-items: center;
+        /* background-color: white; */
+        display: flex;
+       
+        justify-content: center;
+      
+       }
+
+       @keyframes sk-scaleout{
+        0%{
+          -webkit-animation: scale(0);
+          transform: scale(0);
+        }
+        100%{
+          -webkit-animation: scale(1);
+          opacity: 0.5;
+          transform: scale(1);
+        }
+       }
+  /* @media(max-width:768px){
+    .smal{
+      margin-bottom: 700px;
+      background-color: red;
+    }
+  } */
+  p{
+    color: #c8cccc;
+    font-weight: bolder;
+  }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="brand" id="spinner">
+      <div class="b">
+      <h1>SocialMedia.</h1>
+      <div  class="container">
+        <div class="loading"></div>
+      </div>
+     </div>
+     
+      
+      </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
